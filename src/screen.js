@@ -1,6 +1,4 @@
-import TextGrid from "overprint/overprint/text-grid";
-import Font from "overprint/overprint/font";
-import Cell from "overprint/overprint/cell";
+import { TextGrid, Font, Cell } from "overprint";
 
 const Glyphs = {
   EMPTY: Cell(" "),
