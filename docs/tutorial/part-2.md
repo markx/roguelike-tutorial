@@ -39,9 +39,7 @@ The rendering layer is the first part of the game that we’ll split out. It’s
 Make a new file `src/screen.js` and move all the existing grid rendering code into a new class which encapsulates the grid object and provides a `render` method to update the display of the grid.
 
 ```js
-import TextGrid from "overprint/overprint/text-grid";
-import Font from "overprint/overprint/font";
-import Cell from "overprint/overprint/cell";
+import { TextGrid, Font, Cell } from "overprint";
 
 class Screen {
   constructor(canvas, width, height) {

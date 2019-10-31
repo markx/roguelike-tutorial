@@ -30,7 +30,7 @@ const canvas = document.querySelector("#game");
 With a reference to this DOM element, we can construct a default `TextGrid` and render it to the screen:
 
 ```js
-import TextGrid from "overprint/overprint/text-grid";
+import { TextGrid } from "overprint";
 
 const canvas = document.querySelector("#game");
 
@@ -48,7 +48,7 @@ First, let’s customize the default grid dimensions and add a font. To do this,
 To get things started, I’m going with a 1.6 aspect ratio and using `Menlo` as the font with a 15px cell size. Note that the `Font` constructor needs to be imported from the `overprint` package before it can be used in the config.
 
 ```js
-import Font from "overprint/overprint/font";
+import { Font } from "overprint";
 ```
 
 The config setup looks like this:
@@ -68,7 +68,7 @@ To make sure everything is working, let’s render a static `@` symbol before we
 First, import the `Cell` constructor from `overprint`.
 
 ```js
-import Cell from "overprint/overprint/cell";
+import { Cell } from "overprint";
 ```
 
 The coordinate origin for the grid (0,0) is at the top left corner. The X axis moves right in the postive direction and the Y axis moves down in the positive direction. So this case, the center of the grid is `40,25`. Use `writeCell` to draw a cell there.
